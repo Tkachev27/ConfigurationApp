@@ -1,0 +1,62 @@
+.banner {
+    margin-top: 20px;
+    color: #fff;
+    font-size: 50px;
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 0 20px;
+        margin-bottom: 50px;
+    }
+
+    &__text {
+        width: 40%;
+        color: #fff;
+        font-size: 74px;
+
+        &__item1 {
+            border-bottom: 3px solid #8ffe09;
+        }
+
+        &__item2 {
+            margin-left: 50px;
+            border-bottom: 3px solid #ff00ff;
+        }
+
+        &__item3 {
+            margin-left: 100px;
+            border-bottom: 3px solid #66fcf1;
+        }
+
+        &__item4 {
+            margin-left: 150px;
+            border-bottom: 3px solid #ee1159;
+        }
+    }
+
+    &__img {
+        width: 50%;
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+}
+
+.btn {
+    padding: 10px 20px;
+    font-size: 40px;
+    color: #fff;
+    background: #333;
+    border: none;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+
+    &:hover {
+        box-shadow: 0 0 20px #66fcf1;
+    }
+}

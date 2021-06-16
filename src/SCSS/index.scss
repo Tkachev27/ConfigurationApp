@@ -1,0 +1,44 @@
+@import './variables';
+@import './mixins';
+
+@font-face {
+    font-family: PT Sans;
+    src: local('PT Sans'), url(../Fonts/PTSans-Regular.ttf) format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: PT Sans;
+    src: local('PT Sans'), url(../Fonts/PTSans-Bold.ttf) format('opentype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    overflow-x: hidden;
+    position: relative;
+    font-family: 'PT Sans';
+    font-size: 16px;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(
+        108deg,
+        rgba(7, 11, 34, 1) 5%,
+        rgba(36, 12, 78, 1) 100%,
+        rgba(253, 254, 246, 1) 100%
+    );
+}
+
+@import './navigation.scss';
+@import './home.scss';
+@import './configurator.scss';
+.app {
+    display: flex;
+    justify-content: space-around;
+}
